@@ -30,8 +30,8 @@ if data is not None and prompt_template:
 import requests
 from urllib.parse import quote
 
-SERPAPI_KEY = 
-SCRAPERAPI_KEY = 
+SERPAPI_KEY = "3acd5eb6598dbdf39392653240274e82b471e6cd6b5d904b433b3c08e227b484"
+SCRAPERAPI_KEY = "7647ad41f3ba46041e4a22500f14112f"
 
 def serpapi_search(query):
    
@@ -65,7 +65,8 @@ def scraperapi_search(query):
         print(f"Other error occurred: {err}")
     return None
 
-GROQ_API_KEY = 
+GROQ_API_KEY = "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"
+
 def extract_info_with_groq(search_text, prompt):
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
